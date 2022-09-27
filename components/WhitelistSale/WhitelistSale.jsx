@@ -18,12 +18,12 @@ const WhitelistSale = (props) => {
     const [days, setDays] = useState(null);
     const [timestamp, setTimestamp] = useState(Math.floor(Date.now() / 1000));
 
-    const saleStartTime = 1664099642;
-    const endSaleTime = saleStartTime + 12 * 3600;
+    const saleStartTime = 1665352800;
+    const endSaleTime = saleStartTime + 86400 * 14; //+15jours
 
     const toast = useToast();
 
-    const contractAddress = "0xE41398455CeC38D2E0A7612De9d336Cc258bC41F";
+    const contractAddress = "0x368a2fb35199058D019938C81363F31BD9b4984E";
 
     useEffect(() => {
         getCount()

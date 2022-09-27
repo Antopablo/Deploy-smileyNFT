@@ -14,11 +14,11 @@ const PublicSale = (props) => {
     const [hours, setHours] = useState(null);
     const [days, setDays] = useState(null);
 
-    const saleStartTime = 1664015235 + 24 * 3600; //24h après la whitelist
+    const saleStartTime = 1665352800 + 86400 * 15; // 15 jours après le début des ventes (1 jour après la fin de la whitelist)
 
     const toast = useToast();
 
-    const contractAddress = "0xE41398455CeC38D2E0A7612De9d336Cc258bC41F";
+    const contractAddress = "0x368a2fb35199058D019938C81363F31BD9b4984E";
 
     useEffect(() => {
         getCount()
